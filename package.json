@@ -1,0 +1,14 @@
+{
+  "name": "loading_merging_images",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raymond",
+  "license": "ISC",
+  "devDependencies": {
+    "node-cmd": "^2.0.0"
+  }
+}
