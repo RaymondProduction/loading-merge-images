@@ -25,8 +25,12 @@ This command merge images witch has got size 293x293, and saves in the file.
 ```
 npm install
 ```
+If you do not have montage then install it
+```
+sudo apt-get install imagemagick
+```
 ### Run script
 ```
-node script3.js -x 0 -y 1
+node script.js -x 0 -y 1
 ```
 This code I did for myself
