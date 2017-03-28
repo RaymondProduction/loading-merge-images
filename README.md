@@ -4,7 +4,7 @@ This JS script download and merge images.
 Now it is download image from **yandex map**.
 
 ### Code for download
-```
+```js
 var download = function(uri, filename, callback) {
   request.head(uri, function(err, res, body) {
     request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
@@ -33,4 +33,8 @@ sudo apt-get install imagemagick
 ```
 node script.js -x 0 -y 1
 ```
+### Useful links
+[Command-line Tools: Montage @ ImageMagick](https://www.imagemagick.org/script/montage.php)
+[Command-line Options @ ImageMagick (composite)](https://www.imagemagick.org/script/command-line-options.php#composite)
+[Downloading images with node.js](http://stackoverflow.com/questions/12740659/downloading-images-with-node-js)
 This code I did for myself

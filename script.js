@@ -60,8 +60,7 @@ for (var j = 0; j < row; j++) {
         cmd.run('mkdir image/'+zero(shiftX)+'-'+zero(shiftY)+'/');
         cmd.get(
           'montage -geometry 293x293+0+0  *.png ./image/'+zero(shiftX)+'-'+zero(shiftY)+'.png',
-          function(data) {
-            console.log('plot result =>',data);
+          function() {
             cmd.run('mv *.png ./image/'+zero(shiftX)+'-'+zero(shiftY)+'/');
             console.log('Mission completed');
           }
@@ -72,11 +71,14 @@ for (var j = 0; j < row; j++) {
 };
 
 
+
+
 // схема
-// https://vec04.maps.yandex.net/tiles?l=map&v=17.03.20-0&x=307141&y=177333&z=19&scale=1.1458333730697632&lang=uk_UA
 // https://vec02.maps.yandex.net/tiles?l=map&v=17.03.20-0&x=307212&y=177432&z=19&scale=1.1458333730697632&lang=uk_UA
 // гибрид
-//https://sat02.maps.yandex.net/tiles?l=sat&v=3.303.0&x=307142&y=177333&z=19&lang=uk_UA
+// результат наложения двух картинок
+// https://sat02.maps.yandex.net/tiles?l=sat&v=3.304.0&x=307152&y=177329&z=19&lang=ru_UA
+// https://vec02.maps.yandex.net/tiles?l=skl&v=17.03.23-0&x=307152&y=177329&z=19&scale=1&lang=ru_UA
 // спутник
 //https://sat01.maps.yandex.net/tiles?l=sat&v=3.303.0&x='+stX+'&y='+stY+'&z=19&lang=ru_UA'
 
